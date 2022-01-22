@@ -1,3 +1,5 @@
+/*NavBar*/
+
 .nav-links,
 .nav-list {
 	display: flex;
@@ -49,6 +51,7 @@ body {
 	color: WHITE;
 }
 
+/*NavBar Mobile*/
 @media screen and (min-width: 200px) and (max-width: 750px) {
 	* {
 		overflow-y: auto;
@@ -56,7 +59,7 @@ body {
 	}
 
 	.logo {
-		width: 100%;
+		width: 100px;
 	}
 	/* sidebar Nav */
 	.navvie {
@@ -117,11 +120,6 @@ body {
 } */
 
 	/* Nav Bar Mobile version */
-
-	.logo {
-		width: 2em;
-		height: 2em;
-	}
 
 	.nav-links {
 		margin: 0 0 0 40px;
