@@ -156,5 +156,9 @@ body {
 
 #submit {
 	background-color: blueviolet;
+	border-radius: 20px;
+	border: transparent;
+	padding: 5px;
+	width: 90px;
 	color: aliceblue;
 }
