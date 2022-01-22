@@ -17,7 +17,7 @@ const Stores = (data) => {
 	return (
 		<div className='store-bg'>
 			<NavBar />
-			{Store ? (
+			{data ? (
 				<div className='store-sect'>
 					<ul className='all-destination'>
 						<CarouselProvider
@@ -25,7 +25,7 @@ const Stores = (data) => {
 							naturalSlideHeight={125}
 							totalSlides={3}>
 							<Slider>
-								{Store.map((stores, index) => (
+								{data.map((stores, index) => (
 									<Slide index={index}>
 										<li className='objects' key={index}>
 											<div className='content-store'>

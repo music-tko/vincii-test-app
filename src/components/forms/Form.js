@@ -5,14 +5,13 @@ const Form = () => {
 		<div>
 			<NavBar />
 			<form action='post' id='contact'>
-				<div className='profile-login'>
+				<div className='profile-submit'>
 					<label htmlFor='Name' id='name'>
 						<p>Name:</p>
 					</label>
 					<input type='name' name='name' id='contact-name' minLength={6} />
-
-					<button id='submit'> Submit </button>
 				</div>
+				<button id='submit'> Submit </button>
 			</form>
 		</div>
 	);
