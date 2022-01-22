@@ -141,9 +141,9 @@ body {
 	}
 }
 
-.store-sect {
+/* .store-sect {
 	background-color: blanchedalmond;
-}
+} */
 
 #contact {
 	display: flex;
@@ -161,4 +161,12 @@ body {
 	padding: 5px;
 	width: 90px;
 	color: aliceblue;
+}
+
+/*Store section*/
+
+.store-pic {
+	width: 40vw;
+	height: 40vh;
+	border-radius: 30px;
 }
