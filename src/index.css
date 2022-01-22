@@ -1,13 +1,144 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.nav-links,
+.nav-list {
+	display: flex;
+	justify-content: space-between;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-links {
+	margin: 2em 0 3em 5em;
+	height: 5em;
+	align-items: center;
+}
+
+.burger-menu {
+	display: none;
+}
+
+.nav-list {
+	flex-direction: row;
+	list-style: none;
+	padding: 2em 5em 2em 5em;
+	background-color: #f2f2f25b;
+	/* height: 1.1em; */
+	width: 40%;
+}
+
+.nav-a {
+	justify-content: flex-end;
+	transition: 0.5s ease;
+	transition-delay: 0s;
+	font-size: 1.5vw;
+	font-weight: 100;
+}
+
+.nav-a:hover {
+	border-bottom: rgba(245, 245, 245, 0.767) solid;
+}
+
+.nav-a:active {
+	border-bottom: rgb(255, 255, 255) solid;
+}
+
+.nav-liner {
+	width: 13em;
+	margin-right: -4em;
+}
+
+body {
+	background-color: black;
+	color: WHITE;
+}
+
+@media screen and (min-width: 200px) and (max-width: 750px) {
+	* {
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+
+	.logo {
+		width: 100%;
+	}
+	/* sidebar Nav */
+	.navvie {
+		margin: 0;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.burger-menu {
+		display: block;
+		position: relative;
+	}
+
+	.burger-menu button {
+		position: fixed;
+		right: 40px;
+		top: 40px;
+		z-index: 10;
+		cursor: pointer;
+		background-color: transparent;
+		border: none;
+	}
+
+	.menuNav {
+		overflow-y: scroll;
+		list-style: none;
+		position: fixed;
+		top: 0;
+		background: black;
+		right: 0;
+		bottom: 0;
+		height: 100vh;
+		width: 0;
+		overflow: hidden;
+		max-width: 250px;
+		z-index: 9;
+	}
+
+	.menuNav.showMenu {
+		width: 100%;
+	}
+
+	.nav-a {
+		display: block;
+		padding: 10px 40px;
+		text-decoration: none;
+		color: #3fffd2;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	.menuNav li:first-child {
+		margin-top: 7rem;
+	}
+
+	/* .burgerbutton{
+	background-color: transparent;
+} */
+
+	/* Nav Bar Mobile version */
+
+	.logo {
+		width: 2em;
+		height: 2em;
+	}
+
+	.nav-links {
+		margin: 0 0 0 40px;
+		padding: 10px 0 0 0;
+	}
+
+	.nav-list {
+		display: none;
+		overflow-y: hidden;
+	}
+
+	.nav-p {
+		font-size: 14px;
+		margin-right: 8px;
+	}
+
+	.nav-liner {
+		display: none;
+	}
 }
