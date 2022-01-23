@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from "react";
 import { CarouselProvider, Slider, Slide, Dot } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import NavBar from "../navigation/NavBar";
 import store from "./db.json";
+import LightBox from "./LightBox";
 
 const Stores = (data) => {
 	return (
 		<div className='store-bg'>
 			<NavBar />
 			<div className='store-sect'>
-				<ul className='all-destination'>
+				<ul className='all-stores'>
 					<CarouselProvider
 						naturalSlideWidth={100}
 						naturalSlideHeight={125}
@@ -20,12 +20,16 @@ const Stores = (data) => {
 									<li className='objects' key={index}>
 										<div className='content-store'>
 											<div className='desti-store'>
-												<img
+												<LightBox
 													src={stores.img}
 													alt={stores.title}
-													className='store-pic'
-												/>
-
+													className='store-pic'>
+													<img
+														src={stores.img}
+														alt={stores.title}
+														className='store-pic'
+													/>
+												</LightBox>
 												<div className='content-slide'></div>
 												<div className='all'>
 													<h1 className='store-heading'>
@@ -49,7 +53,6 @@ const Stores = (data) => {
 					</CarouselProvider>
 				</ul>
 			</div>
-			)
 		</div>
 	);
 };

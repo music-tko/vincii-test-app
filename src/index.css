@@ -20,7 +20,6 @@
 	flex-direction: row;
 	list-style: none;
 	padding: 2em 5em 2em 5em;
-	background-color: #f2f2f25b;
 	/* height: 1.1em; */
 	width: 40%;
 }
@@ -29,7 +28,7 @@
 	justify-content: flex-end;
 	transition: 0.5s ease;
 	transition-delay: 0s;
-	font-size: 1.5vw;
+	font-size: 1.5em;
 	font-weight: 100;
 }
 
@@ -39,6 +38,7 @@
 
 .nav-a:active {
 	border-bottom: rgb(255, 255, 255) solid;
+	color: white;
 }
 
 .nav-liner {
@@ -89,7 +89,7 @@ body {
 		position: fixed;
 		top: 0;
 		background: black;
-		right: 0;
+		right: -50px;
 		bottom: 0;
 		height: 100vh;
 		width: 0;
@@ -141,9 +141,20 @@ body {
 	}
 }
 
-/* .store-sect {
-	background-color: blanchedalmond;
-} */
+/* Home Section*/
+
+.header {
+	margin: 0;
+	height: 80vh;
+	width: 100vw;
+	background-image: url(./components/assets/header.jpg);
+	background-position: bottom;
+	background-size: cover;
+	background-color: rgba(143, 38, 143, 0.733);
+	background-blend-mode: multiply;
+}
+
+/* Contact Form */
 
 #contact {
 	display: flex;
@@ -167,6 +178,52 @@ body {
 
 .store-pic {
 	width: 40vw;
-	height: 40vh;
+	height: 70vh;
 	border-radius: 30px;
+}
+
+.store-sect {
+	display: flex;
+	flex-direction: column;
+}
+
+.desti-store {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+}
+.dialog {
+	box-shadow: 0 8px 6px -6px black;
+	position: static;
+	left: 50%;
+	top: 50%;
+	width: 8em;
+	height: 8em;
+}
+
+.store-heading {
+	font-size: 3em;
+}
+
+.description {
+	font-size: 1.2em;
+}
+
+@media screen and (min-width: 200px) and (max-width: 750px) {
+	.store-pic {
+		width: 60vw;
+		height: 30vh;
+		border-radius: 30px;
+	}
+
+	.store-sect {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.desti-store {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
 }
