@@ -178,7 +178,7 @@ body {
 
 .store-pic {
 	width: 40vw;
-	height: 70vh;
+	height: 60vh;
 	border-radius: 30px;
 }
 
@@ -197,8 +197,6 @@ body {
 	position: static;
 	left: 50%;
 	top: 50%;
-	width: 8em;
-	height: 8em;
 }
 
 .store-heading {
@@ -226,7 +224,15 @@ body {
 		display: flex;
 		flex-direction: column;
 	}
+	.store-heading {
+		margin-right: 50px;
+		font-size: 1.5em;
+	}
 
+	.description {
+		font-size: 1em;
+		margin-right: 50px;
+	}
 	.desti-store {
 		display: flex;
 		flex-direction: column;
@@ -237,7 +243,13 @@ body {
 		position: absolute;
 		left: 0;
 		top: 0;
-		width: 4em;
-		height: 4em;
+	}
+
+	.lightbox {
+		position: relative;
+		top: 0;
+		left: 0 !important;
+		width: 20rem !important;
+		height: 20rem !important;
 	}
 }

@@ -26,12 +26,13 @@ const LightBox = ({ children, src, alt, Wrapper = "div", zIndex = 100 }) => {
 					<img
 						src={src}
 						alt={alt}
+						className='lightbox'
 						style={{
 							position: "relative",
 							top: "0",
 							left: "30%",
-							height: "28em",
-							width: "28em",
+							height: "25em",
+							width: "25em",
 							cursor: "pointer",
 						}}
 					/>
