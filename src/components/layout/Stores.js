@@ -30,19 +30,20 @@ const Stores = (data) => {
 														className='store-pic'
 													/>
 												</LightBox>
-												<div className='content-slide'></div>
-												<div className='all'>
-													<h1 className='store-heading'>
-														{stores.title.toUpperCase()}
-													</h1>
-													<p class='description'>{stores.description}</p>
-												</div>
-												<div className='store-buttons'>
-													<Dot className='store-btn' slide={0} />
+												<div className='content-slide'>
+													<div className='all'>
+														<h1 className='store-heading'>
+															{stores.title.toUpperCase()}
+														</h1>
+														<p class='description'>{stores.description}</p>
+													</div>
+													<div className='store-buttons'>
+														<Dot className='store-btn' slide={0} />
 
-													<Dot className='store-btn' slide={1} />
+														<Dot className='store-btn' slide={1} />
 
-													<Dot className='store-btn' slide={2} />
+														<Dot className='store-btn' slide={2} />
+													</div>
 												</div>
 											</div>
 										</div>

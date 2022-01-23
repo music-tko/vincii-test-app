@@ -30,8 +30,8 @@ const LightBox = ({ children, src, alt, Wrapper = "div", zIndex = 100 }) => {
 							position: "relative",
 							top: "0",
 							left: "30%",
-							height: "30em",
-							width: "30em",
+							height: "28em",
+							width: "28em",
 							cursor: "pointer",
 						}}
 					/>

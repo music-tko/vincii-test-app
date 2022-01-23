@@ -190,7 +190,7 @@ body {
 .desti-store {
 	display: flex;
 	flex-direction: row;
-	gap: 30px;
+	gap: 80px;
 }
 .dialog {
 	box-shadow: 0 8px 6px -6px black;
@@ -202,16 +202,22 @@ body {
 }
 
 .store-heading {
+	margin-right: 50px;
 	font-size: 3em;
 }
 
 .description {
 	font-size: 1.2em;
+	margin-right: 50px;
+}
+.all {
+	display: flex;
+	flex-direction: column;
 }
 
 @media screen and (min-width: 200px) and (max-width: 750px) {
 	.store-pic {
-		width: 60vw;
+		width: 75vw;
 		height: 30vh;
 		border-radius: 30px;
 	}
@@ -225,5 +231,13 @@ body {
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
+	}
+	.dialog {
+		box-shadow: 0 8px 6px -6px black;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 4em;
+		height: 4em;
 	}
 }
